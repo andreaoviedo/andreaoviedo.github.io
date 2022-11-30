@@ -1,0 +1,43 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.negritas {
+  font-weight: 700;
+}
+label {
+  font-weight: 500;
+}
+
+.btn {
+  background-color: black;
+  color: #fff;
+  border-radius: 0px;
+  padding: 5px 70px;
+}
+
+textarea {
+  background-color: #f8f9fa !important;
+  border: 0px !important;
+}
+
+.navbar-brand {
+  color: #ff9c9c !important;
+}
+
+.nav-link {
+  color: #000 !important;
+}
+
+.navbar {
+  border-bottom: solid #e1e1e1 1px !important;
+}
+
+.alert-warning {
+  background-color: #fffcf4;
+  border: 0px;
+}
+
+.instruction {
+  font-size: 0.9em;
+}
