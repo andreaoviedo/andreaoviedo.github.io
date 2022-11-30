@@ -34,10 +34,10 @@ document.write(`<nav class="navbar navbar-expand-lg">
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
           <li>
-            <a class="dropdown-item" href="index.html">Asignaciones aleatorias</a>
+            <a class="dropdown-item" href="https://andreaoviedov.com/herramientas/asignaciones">Asignaciones aleatorias</a>
           </li>
           <li>
-            <a class="dropdown-item" href="equiposaleatorios.html">Equipos aleatorios</a>
+            <a class="dropdown-item" href="https://andreaoviedov.com/herramientas/equipos">Equipos aleatorios</a>
           </li>
           <li><hr class="dropdown-divider" /></li>
           <li>
