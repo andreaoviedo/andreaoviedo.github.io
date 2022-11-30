@@ -46,7 +46,7 @@ document.write(`<nav class="navbar navbar-expand-lg">
         </ul>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#"
+        <a class="nav-link active" aria-current="page" href="../contacto"
           >Contacto</a
         >
       </li>
