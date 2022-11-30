@@ -1,6 +1,6 @@
 document.write(`<nav class="navbar navbar-expand-lg">
 <div class="container-fluid">
-  <a class="navbar-brand" href="../index.html"
+  <a class="navbar-brand" href="../../index.html"
     ><span class="negritas">andrea</span>oviedo</a
   >
   <button
@@ -17,12 +17,12 @@ document.write(`<nav class="navbar navbar-expand-lg">
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#"
+        <a class="nav-link active" aria-current="page" href="../../portafolio"
           >Portafolio</a
         >
       </li>
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="../CV"
+        <a class="nav-link active" aria-current="page" href="../../CV"
           >CV</a
         >
       </li>
@@ -51,7 +51,7 @@ document.write(`<nav class="navbar navbar-expand-lg">
         </ul>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="../contacto"
+        <a class="nav-link active" aria-current="page" href="../../contacto"
           >Contacto</a
         >
       </li>
