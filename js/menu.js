@@ -1,6 +1,6 @@
 document.write(`<nav class="navbar navbar-expand-lg">
 <div class="container-fluid">
-  <a class="navbar-brand" href="#"
+  <a class="navbar-brand" href="../index.html"
     ><span class="negritas">andrea</span>oviedo</a
   >
   <button
@@ -19,6 +19,11 @@ document.write(`<nav class="navbar navbar-expand-lg">
       <li class="nav-item">
         <a class="nav-link active" aria-current="page" href="#"
           >Portafolio</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="../CV"
+          >CV</a
         >
       </li>
       <li class="nav-item dropdown">
