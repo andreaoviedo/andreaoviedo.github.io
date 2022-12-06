@@ -18,7 +18,7 @@ document.write(`<nav id="sidebar">
         <a href="#">Historia de los juegos y videojuegos</a>
       </li>
       <li>
-        <a href="../generos.html">Géneros de videojuegos</a>
+        <a href="../cap/generos.html">Géneros de videojuegos</a>
       </li>
       <li>
         <a href="#">Home 3</a>
