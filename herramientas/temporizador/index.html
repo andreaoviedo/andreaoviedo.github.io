@@ -37,53 +37,29 @@
         aleatoria. Puedes elegir hacerlos por número de integrantes o por número
         de equipos.
       </div>
-
-      <div class="row">
-        <div class="col-md-4">
-          <div class="form-group">
-            <label for="inputstudents">Participantes</label>
-            <p class="instruction">
-              Ingresa a continuación los nombres de los participantes, separados
-              por un salto de línea:
-            </p>
-            <textarea class="form-control" id="inputstudents" rows="6">
-Fer&#13;Charlie&#13;&#10;Andrea&#13;&#10;Pedro&#13;&#10;Juan&#13;&#10;Miguel&#13;&#10;María&#13;&#10;Luis&#13;&#10;José&#13;&#10;Alberto&#13;&#10;Perla&#13;&#10;Berenice</textarea
-            >
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="form-group">
-            <label for="members">Número de integrantes por equipo</label>
-
-            <input type="number" class="form-control" id="members" rows="20" />
-            <button
-              onclick="createTeams('members','output1',true)"
-              class="btn mb-3 mt-3"
-              type="submit"
-            >
-              Crear equipos
-            </button>
-            <p id="output1"></p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="form-group">
-            <label for="groups">Número de equipos</label>
-            <input type="number" class="form-control" id="groups" rows="6" />
-            <button
-              onclick="createTeams('groups','output2',false)"
-              class="btn mb-3 mt-3"
-              type="submit"
-            >
-              Crear equipos
-            </button>
-            <p id="output2"></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="mt-5"></div>
-      <p id="counter"></p>
+      <label for="minutes">Minutos:</label>
+      <input type="number" id="minutes" min="0" max="60" />
+      <label for="seconds">Segundos:</label>
+      <input type="number" id="seconds" min="0" max="59" />
+      <br /><br />
+      <button id="start" onclick="startTimer()">Iniciar</button>
+      <button id="pause" onclick="pauseTimer()">Pausar</button>
+      <button id="continue" style="display: none;" onclick="continueTimer()">
+        Continuar
+      </button>
+      <button onclick="resetTimer()">Reestablecer</button>
+      <button onclick="restartTimer()">Reiniciar</button>
+      <br /><br />
+      <label for="timeToAdd">Agregar tiempo:</label>
+      <select id="timeToAdd">
+        <option value="1">1 minuto</option>
+        <option value="3">3 minutos</option>
+        <option value="5">5 minutos</option>
+        <option value="10">10 minutos</option>
+      </select>
+      <button onclick="addTime()">Agregar</button>
+      <br /><br />
+      <div style="text-align: center; font-size: 100px;" id="timer">00:00</div>
     </div>
 
     <!-- Optional JavaScript -->
@@ -95,5 +71,13 @@ Fer&#13;Charlie&#13;&#10;Andrea&#13;&#10;Pedro&#13;&#10;Juan&#13;&#10;Miguel&#13
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script>
+        document.getElementById("pause").style.display = "none";
+      var interval;
+      var minutes = 0;
+      var seconds = 0;
+      var time;
+
+    </script>
   </body>
 </html>
