@@ -1,10 +1,13 @@
-
+* {
+    font-family: "Poppins";
+​
+  }
 .date{
     color: #999;
     font-size: 0.8em;
 }
 .company{
-    background: rgb(223, 241, 249);
+    background:  rgba(253, 235, 236, 1);
     
 }
 .location{
@@ -12,19 +15,18 @@
 }
 ​
 .job{
-    font-weight: bold;
+    font-weight: 900;
 }
 ​
 .work-experience{
-    margin-bottom: 10px;
+    margin-bottom: 50px !important;
+    padding: 50px !important;
 
 }
-​
 .external-link{
     font-weight: light;
     color: #73726E !important;
 }
-​
 .project-link{
     text-align: right;
     color: #73726E !important;
@@ -55,7 +57,7 @@
 .bg-aqua{
     background-color: rgb(222, 239, 242);
 }
-​
+
 .navbar-brand {
     color: #ff9c9c !important;
   }
@@ -76,13 +78,18 @@
   }
 ​
   .negritas {
-    font-weight: 700;
+    font-weight: bold;
   }
-​
+  .destacado{
+    color: #ed6d6d;
+  }
+  .destacado2{
+    font-weight: bold;
+    color: #264E86;
+  }
   section{
     margin-top:50px;
   }
-​
   .btn{
     background-color: black;
   color: #fff;
@@ -91,9 +98,6 @@
   padding: 5px 50px;
   }
   .spacer{
-    height: 70px;
+    height: 50px;
   }
-  * {
-    font-family: "Poppins";
-​
-  }
+  
