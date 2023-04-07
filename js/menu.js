@@ -1,7 +1,7 @@
 document.write(`<nav class="navbar navbar-expand-lg">
 <div class="container-fluid">
-  <a class="navbar-brand" href="../../index.html"
-    ><span class="negritas">andrea</span>oviedo</a
+  <a class="navbar-brand" style="color:#ff9c9c" href="../../index.html"
+    ><span style="font-weight:700">andrea</span>oviedo</a
   >
   <button
     class="navbar-toggler"
