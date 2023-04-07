@@ -28,52 +28,54 @@
     <script src="../../js/menu.js"></script>
 
     <div class="container">
-      <h1 class="mt-5 mb-3">&#x1f500; Temporizador</h1>
-      <div
+      <h1 class="mt-5 mb-3">&#9200; Temporizador</h1>
+      <!-- <div
         class="alert alert-warning alert-dismissible fade show mb-4"
         role="alert"
       >
         &#x1f4a1; Utiliza esta herramienta para crear equipos de forma
         aleatoria. Puedes elegir hacerlos por número de integrantes o por número
         de equipos.
-      </div>
+      </div> -->
       <label for="minutes">Minutos:</label>
-      <input type="number" id="minutes" min="0" max="60" />
+      <input type="number" id="minutes" min="0" max="60" value="0" />
       <label for="seconds">Segundos:</label>
-      <input type="number" id="seconds" min="0" max="59" />
-      <br /><br />
-      <button id="start" onclick="startTimer()">Iniciar</button>
-      <button id="pause" onclick="pauseTimer()">Pausar</button>
-      <button id="continue" style="display: none;" onclick="continueTimer()">
+      <input type="number" class="mr-5" id="seconds" min="0" max="59" value="0"  />
+      <button class="btn btn-green" id="start" onclick="startTimer()">Iniciar</button>
+      <button class="btn" id="pause" onclick="pauseTimer()">Pausar</button>
+      <button class="btn" id="continue" onclick="continueTimer()">
         Continuar
       </button>
-      <button onclick="resetTimer()">Reestablecer</button>
-      <button onclick="restartTimer()">Reiniciar</button>
+      <button class="btn" id="restart" onclick="restartTimer()">Reiniciar</button>
+      
+      <button class="btn" id="reset" onclick="resetTimer()">Reestablecer</button>
+      
       <br /><br />
-      <label for="timeToAdd">Agregar tiempo:</label>
-      <select id="timeToAdd">
-        <option value="1">1 minuto</option>
-        <option value="3">3 minutos</option>
-        <option value="5">5 minutos</option>
-        <option value="10">10 minutos</option>
-      </select>
-      <button onclick="addTime()">Agregar</button>
-      <br /><br />
-      <div style="text-align: center; font-size: 100px;" id="timer">00:00</div>
+     
+      <div class="text-center" style="font-size: 150px;" id="timer">00:00</div>
+      <div id="addTimeBlock" style="margin:auto" class="text-center">
+        <label for="timeToAdd">Agregar tiempo:</label>
+        <select id="timeToAdd">
+          <option value="1">1 minuto</option>
+          <option value="3">3 minutos</option>
+          <option value="5">5 minutos</option>
+          <option value="10">10 minutos</option>
+        </select>
+        <button onclick="addTime()">Agregar</button>
+        <br /><br />
+      </div>
+      <div id="end" class="text-center">
+        El tiempo se terminó
+      </div>
+      
     </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script>
-      document.getElementById("pause").style.display = "none";
-    var interval;
-    var minutes = 0;
-    var seconds = 0;
-    var time;
-
+    
   </script>
-    <script src="../../js/commonfunctions.js"></script>
-    <script src="../../js/randomteams.js"></script>
+    <script src="../../js/timer.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

@@ -44,6 +44,9 @@ document.write(`<nav class="navbar navbar-expand-lg">
           <li>
             <a class="dropdown-item" href="../../herramientas/equipos">Equipos aleatorios</a>
           </li>
+          <li>
+            <a class="dropdown-item" href="../../herramientas/temporizador">Temporizador</a>
+          </li>
           <li><hr class="dropdown-divider" /></li>
           <li>
             <a class="dropdown-item" href="#">Something else here</a>
