@@ -1,6 +1,9 @@
 * {
     font-family: "Poppins", sans-serif;
+​
   }
+​
+​
 .date{
     color: #999;
     font-size: 0.8em;
@@ -20,12 +23,10 @@
 ​
 .work-experience{
     margin-bottom: 10px;
-    
 }
 ​
 .external-link{
     font-weight: light;
-    color: #73726E !important;
 }
 ​
 .project-link{
@@ -59,7 +60,7 @@
     background-color: rgb(222, 239, 242);
 }
 ​
-.navbar-brand{
+.navbar-brand {
     color: #ff9c9c !important;
   }
   
@@ -71,7 +72,7 @@
     border-bottom: solid #e1e1e1 1px !important;
   }
   nav{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 ​
   .bg-white{
@@ -79,11 +80,12 @@
   }
 ​
   .negritas {
-    font-weight: 700 !important;
+    font-weight: 700;
   }
 ​
   section{
     margin-top:50px;
+    margin-bottom:50px;
   }
 ​
   .btn{
