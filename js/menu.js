@@ -47,10 +47,7 @@ document.write(`<nav class="navbar navbar-expand-lg">
           <li>
             <a class="dropdown-item" href="../../herramientas/temporizador">Temporizador</a>
           </li>
-          <li><hr class="dropdown-divider" /></li>
-          <li>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </li>
+          
         </ul>
       </li>
       <li class="nav-item">
@@ -62,3 +59,9 @@ document.write(`<nav class="navbar navbar-expand-lg">
   </div>
 </div>
 </nav>`);
+
+
+let divider = `<li><hr class="dropdown-divider" /></li>
+          <li>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </li>`;
