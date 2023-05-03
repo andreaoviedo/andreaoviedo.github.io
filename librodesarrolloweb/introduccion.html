@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Fundamentos de Desarrollo Web</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font Awesome JS -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+      integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+      integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- <script src="scripts/menu.js"></script> -->
+      <script src="scripts/menu.js"></script>
+      <!-- Sidebar Holder -->
+
+      <!-- Page Content Holder -->
+      <div id="content">
+        <script src="scripts/topbar.js"></script>
+
+        <h1>Introducción al Desarrollo Web</h1>
+
+        <p>Aprender a desarrollar aplicaciones web implica adquirir diferentes habilidades y conocimientos, algunos de los más importantes son:</p>
+        <h6>Habilidades</h6>
+        <p>Aprendizaje autodidacta y continuo, capacidad de análisis, planeación y manejo del tiempo, diseño de interfaces, diseño de experiencia de usuario, comunicación efectiva.</p>
+
+        <h6>Conocimientos técnicos</h6>
+<ul>
+  <li>¿Cómo funciona la web? </li>
+    <li>Tecnologías del lado del cliente (front-end)</li>
+    <li>Tecnologías del lado del servidor (back-end)</li>
+    <li>Herramientas que facilitan el desarrollo web y la colaboración</li>
+</ul>
+        <p>
+          A lo largo de este curso, nos enfocaremos en el desarrollo de dichas habilidades y en el aprendizaje de estos conocimientos. 
+        </p>
+
+        <p>
+          En el siguiente video puedes aprender más sobre los conocimientos técnicos que se requieren para aprender de desarrollo web.
+        </p>
+      
+      
+
+
+
+
+
+
+        <div class="embed-responsive embed-responsive-16by9 responsive-video">
+          <iframe
+            class="embed-responsive-item"
+            src="https://www.youtube.com/embed/ysEN5RaKOlA"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+
+        <h1 id="-c-mo-funciona-la-web-">¿Cómo funciona la web?</h1>
+<p><strong>Referencia</strong> <a href="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/Cómo_funciona_la_Web">MDN web docs. (12 de enero de 2020). <em>Cómo funciona la web.</em></a> </p>
+<p>Esta sección proporciona una vista simplificada de lo que sucede cuando ves una página web en un navegador web de tu computador o teléfono.</p>
+<p>Esta teoría no es esencial para escribir código web a corto plazo, pero en poco tiempo empezarás a beneficiarte realmente al entender lo que está sucediendo en el fondo.</p>
+<h2 id="clientes-y-servidores">Clientes y servidores</h2>
+<p>Las computadoras conectadas a la web se llaman <strong>clientes</strong> y <strong>servidores</strong>. Un diagrama simplificado de cómo interactúan se vería así:</p>
+<img class="mx-auto max400 d-block mb-5" src="img/client-server.png" />
+<ul>
+<li>Los <strong>clientes</strong> son dispositivos de los usuarios conectados a Internet: computadoras, teléfonos, tabletas, relojes inteligentes, etc. y el software que permite acceder a Internet en dichos dispositivos (normalmente, un navegador web como Firefox o Chrome).</li>
+<li>Los <strong>servidores</strong> son computadoras que almacenan páginas web, sitios o aplicaciones. Cuando un dispositivo cliente quiere acceder a una página web, una copia de la página web se descarga desde el servidor en el equipo cliente y se muestra en el navegador web del usuario.</li>
+</ul>
+<p>Existen tecnologías para desarrollo del lado del cliente y del lado del servidor, las cuales se conocen como front-end y back-end respectivamente. Algunas de ellas son:</p>
+<div class="row">
+  <div class="col"><p><strong>Front-end (cliente)</strong></p>
+    <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    </ul></div>
+  <div class="col"><p><strong>Back-end (servidor)</strong></p>
+    <ul>
+    <li>Node JS</li>
+    <li>Python + Django</li>
+    <li>Ruby on Rails</li>
+    <li>PHP + diferentes frameworks (Laravel, Symphony, etc).</li>
+    </ul></div>
+</div>
+
+
+<h2 id="las-herramientas-que-lo-hacen-posible">Las herramientas que lo hacen posible</h2>
+<p>Imaginaremos que el cliente es tu casa y el servidor una tienda, la web es la carretera que te permite ir de tu casa a la tienda. Entonces, además del cliente y el servidor, necesitamos:</p>
+<ul>
+<li><strong>Conexión a <a href="https://www.notion.so/Annex-Web-terminologies-6a3e2abefd1b42f3ab5a637b320786c1">Internet</a></strong>: permite enviar y recibir datos en la web. Básicamente es el recorrido entre tu casa y la tienda.</li>
+<li><strong><a href="https://www.notion.so/Annex-Web-terminologies-6a3e2abefd1b42f3ab5a637b320786c1">TCP/IP</a></strong>: <strong>Protocolo de Control de Transmisión</strong> y <strong>Protocolo de Internet</strong>, son los protocolos de comunicación que definen cómo deben viajar los datos a través de la web. Esto es, los medios de transporte que te permiten hacer un pedido, ir a la tienda y comprar los productos. En nuestro ejemplo, podría ser un coche, una bicicleta o tus propios pies.</li>
+<li><strong><a href="https://www.notion.so/Annex-Web-terminologies-6a3e2abefd1b42f3ab5a637b320786c1">DNS</a>:</strong> los servidores del <strong>Sistema de Nombres de Dominio</strong> (DNS, por sus siglas en inglés), son como una libreta de direcciones de sitios web. Cuando escribes una dirección web en el navegador, el navegador busca los DNS antes de recuperar el sitio web. El navegador necesita averiguar en qué servidor vive el sitio web y así enviar los mensajes HTTP al lugar correcto (ver más abajo). Esto es como buscar la dirección de la tienda para que puedas llegar a ella.</li>
+<li><strong><a href="https://www.notion.so/Annex-Web-terminologies-6a3e2abefd1b42f3ab5a637b320786c1">HTTP</a>:</strong> el <strong>Protocolo de Transferencia de Hipertexto</strong> es un protocolo de aplicación que define un idioma para que los clientes y servidores se puedan comunicar. Esto es como el idioma que utilizas para ordenar tus compras.</li>
+<li><strong>Archivos componentes</strong>: un sitio web se compone de muchos archivos diferentes, que son como las diferentes partes de los productos que comprarás en la tienda. Estos archivos se dividen en dos tipos principales:<ul>
+<li><strong>Archivos de código</strong>: los sitios web se construyen principalmente con HTML, CSS y JavaScript, aunque te encontrarás con otras tecnologías más adelante.</li>
+<li><strong>Recursos:</strong> este es un nombre colectivo para el resto de materiales que conforman un sitio web, como imágenes, música, video, documentos de Word, archivos PDF, etc.</li>
+</ul>
+</li>
+</ul>
+<h2 id="entonces-qu-sucede-exactamente-">Entonces, ¿qué sucede exactamente?</h2>
+<p>Cuando escribes una dirección web en el navegador (usando nuestra analogía para ir a la tienda):</p>
+<ol>
+<li>El navegador va al servidor DNS y encuentra la dirección real del servidor donde el sitio web vive (encontrar la dirección de la tienda).</li>
+<li>El navegador envía un mensaje de petición HTTP al servidor, pidiéndole que envíe una copia de la página web para el cliente (ir a la tienda y hacer un pedido). Este mensaje y todos los datos enviados entre el cliente y el servidor, se envían a través de tu conexión a Internet usando TCP/IP.</li>
+<li>Siempre que el servidor apruebe la solicitud del cliente, el servidor enviará al cliente un mensaje «200 OK», que significa, «¡por supuesto que puedes ver ese sitio web! Aquí está.», y comenzará a enviar los archivos de la página web al navegador como una serie de pequeños trozos llamados <em>paquetes de datos</em> (la tienda te entrega tus productos y los llevas de regreso a casa).</li>
+<li>El navegador reúne los pequeños trozos, forma un sitio web completo y te lo muestra (llegas a casa con tus nuevas compras).<img class="img-fluid  " src="img/dns.png" /></li>
+</ol>
+
+<div class="line"></div>
+
+        <h3>Prácticas</h3>
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Práctica Aprendiz
+                </button>
+              </h5>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                <ol>
+                  <li>
+                    Realiza un dibujo que represente cómo funciona la web con el ejemplo de la casa, la carretera y la tienda.
+                  </li>
+                  <li>
+                    Investiga la definición de los términos que no conozcas y agrégalas como anotaciones en el dibujo. Encontrarás explicaciones de cada término en el capítulo [Annex. Web terminologies](https://www.notion.so/Annex-Web-terminologies-6a3e2abefd1b42f3ab5a637b320786c1), si alguna no te queda clara puedes investigarla en internet.
+                  </li>
+                </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="line"></div>
+
+        <h3>&#128218; Referencias</h3>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <div class="line"></div>
+      </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Popper.JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#sidebarCollapse").on("click", function () {
+          $("#sidebar").toggleClass("active");
+          $(this).toggleClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
