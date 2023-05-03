@@ -1,4 +1,4 @@
-document.write(`<nav class="navbar navbar-expand-lg">
+document.write(`<nav class="navbar navbar-expand-lg navbar-light bg-light">
 <div class="container-fluid">
   <a class="navbar-brand" style="color:#ff9c9c" href="../../index2.html"
     ><span style="font-weight:700">andrea</span>oviedo</a
