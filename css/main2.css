@@ -80,8 +80,13 @@
   .negritas {
     font-weight: bold;
   }
-  .destacado{
+  .destacado, #contacto a{
     color: #ed6d6d;
+  }
+
+  #contacto i{
+    font-size: 30px;
+    margin: 20px 10px;
   }
   .destacado2{
     font-weight: bold;
