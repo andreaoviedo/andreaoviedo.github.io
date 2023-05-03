@@ -60,4 +60,4 @@ document.write(`<nav class="navbar navbar-expand-lg navbar-light bg-light">
 let divider = `<li><hr class="dropdown-divider" /></li>
           <li>
             <a class="dropdown-item" href="#">Something else here</a>
-          </li>`;
+          </li>.`;
