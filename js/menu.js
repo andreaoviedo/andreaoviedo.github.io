@@ -34,7 +34,15 @@ document.write(`<nav class="navbar navbar-expand-lg navbar-light bg-light">
           Herramientas
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li>
+            <a class="dropdown-item" href="../../ia">Apps de Inteligencia Artificial</a>
+          </li>  
           <li>
+            <a class="dropdown-item" target="_blank" href="https://appsparaprofes.com/tabla/">Apps para profesores</a>
+          </li>  
+
+          <li><hr class="dropdown-divider" /></li>
+        <li>
             <a class="dropdown-item" href="../../herramientas/asignaciones">Asignaciones aleatorias</a>
           </li>
           <li>
