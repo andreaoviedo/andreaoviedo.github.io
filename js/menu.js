@@ -38,7 +38,7 @@ document.write(`<nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="dropdown-item" href="../../ia">Apps de Inteligencia Artificial</a>
           </li>  
           <li>
-            <a class="dropdown-item" target="_blank" href="https://appsparaprofes.com/tabla">Apps para profesores</a>
+            <a class="dropdown-item" target="_blank" href="https://appsparaprofes.com/tabla/">Apps para profesores</a>
           </li>  
 
           <li><hr class="dropdown-divider" /></li>
