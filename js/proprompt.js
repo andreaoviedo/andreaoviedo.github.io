@@ -1,4 +1,6 @@
  // JSON con las opciones del select
+ var promptdiv = document.getElementById('promptdiv');
+
  var rol_select = document.getElementById('rol-select');
  var rol_input = document.getElementById('rol-input');
 
@@ -86,6 +88,7 @@ opciones.unshift({ value: "", text: "o selecciona una opción de la lista" });
  window.onload = cargarOpciones(length_opciones,length_select);
 
  function construirPrompt() {
+    promptdiv.style.display = "block";
     var instruction_prompt = instruction.value;
     var rol_prompt = rol_input.value  !== '' ? 'Actúa como ' + rol_input.value +'. ': '';
     var format_prompt = format_input.value !== '' ? ' en formato de ' + format_input.value : '';

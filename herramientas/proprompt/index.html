@@ -47,7 +47,7 @@
       </div>
 
       <div class="mt-5"></div>
-      <div id="promptdiv" class="row mt-3">
+      <div style="display: none;" id="promptdiv" class="row mt-3">
         <div class="col-md-3">
             <h5>Este es tu prompt:<i class="fas fa-question-circle" data-toggle="tooltip" title="ChatGPT tomará el rol de este personaje"></i></h5>
         </div>
@@ -157,7 +157,7 @@
           var randomIndex = Math.floor(Math.random() * messages.length);
           var randomMessage = messages[randomIndex];
           var instruction = document.getElementById('instruction');
-          instruction.value = randomMessage + '\n';
+          instruction.value = randomMessage;
         }
       </script>
     <script>
