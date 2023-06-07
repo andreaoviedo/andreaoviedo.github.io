@@ -29,6 +29,7 @@
    { value: "científico de datos", text: "científico de datos" },
    { value: "guía de turistas", text: "guía de turistas" },
    { value: "profesor", text: "profesor" },
+   { value: "niño", text: "niño" },
    { value: "copywriter", text: "copywriter" },
    { value: "reclutador", text: "reclutador" },
    { value: "programador", text: "programador" },
@@ -66,6 +67,7 @@
   ];
   let length_opciones = [
     { value: "140 caracteres", text: "140 caracteres" },
+    { value: "500 palabras", text: "500 palabras" },
     { value: "1 párrafo", text: "1 párrafo" }
   ];
 
@@ -122,7 +124,7 @@ opciones.unshift({ value: "", text: "o selecciona una opción de la lista" });
     var instruction_prompt = instruction.value;
     var rol_prompt = rol_input.value  !== '' ? 'Actúa como ' + rol_input.value +'. ': '';
     var format_prompt = format_input.value !== '' ? ' en formato de ' + format_input.value : '';
-    var length_prompt = length_input.value !== '' ? '. Utiliza un máximo de ' + length_input.value : '';
+    var length_prompt = length_input.value !== '' ? '. Redáctalo en ' + length_input.value : '';
     var language_prompt = language_input.value !== '' ? '. Escribe en ' + language_input.value : '';
     var text = rol_prompt + instruction_prompt + format_prompt + language_prompt + length_prompt;
     prompt.value = text;

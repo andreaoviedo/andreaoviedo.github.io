@@ -43,7 +43,7 @@
         class="alert alert-warning alert-dismissible fade show mb-4"
         role="alert"
       >
-        &#x1f4a1; Utiliza esta herramienta para escribir mejores prompts para ChatGPT.
+        &#x1f4a1; Utiliza esta herramienta para escribir mejores prompts para ChatGPT. No necesitas llenar todos los campos, pero entre más especificaciones ingreses, las respuestas que te dé ChatGPT serán más útiles.
       </div>
 
       <div class="mt-5"></div>
@@ -91,7 +91,7 @@
       </div>
       <div class="row mt-3">
         <div class="col-md-3">
-            <h5>Formato de respuesta <i class="fas fa-question-circle" data-toggle="tooltip" title="ChatGPT tomará el rol de este personaje"></i></h5>
+            <h5>Formato de respuesta <i class="fas fa-question-circle" data-toggle="tooltip" title="Elige cómo quieres que se presente la respuesta"></i></h5>
         </div>
         <div class="col-md-5">
             <input id="format-input" type="text" class="form-control" placeholder="Escribe el formato de salida">
@@ -121,10 +121,10 @@
 
       <div class="row mt-3">
         <div class="col-md-3">
-            <h5>Longitud <i class="fas fa-question-circle" data-toggle="tooltip" title="ChatGPT tomará el rol de este personaje"></i></h5>
+            <h5>Longitud <i class="fas fa-question-circle" data-toggle="tooltip" title="Puedes establecer si quieres que sea la longitud mínima o máxima, ej. 140 caracteres máximo"></i></h5>
         </div>
         <div class="col-md-5">
-            <input id="length-input" type="text" class="form-control" placeholder="Especifica la longitud máxima">
+            <input id="length-input" type="text" class="form-control" placeholder="Especifica la longitud">
         </div>
         
         <div class="col-md-4">
@@ -142,9 +142,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="../../js/commonfunctions.js"></script>
     <script src="../../js/proprompt.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script>
         var messages = [
           "Explica [escribe tu tema] a un niño de 6 años",
@@ -170,11 +168,7 @@
           instruction.value = randomMessage;
         }
       </script>
-    <script>
-      $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
-      });
-    </script>
+   
     <script>
       function copyText() {
   // Obtener el elemento textarea
@@ -195,10 +189,17 @@
 }
 
     </script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    Save
+    <script src="https://kit.fontawesome.com/5a36658c9e.js" crossorigin="anonymous"></script>
+
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+ Save
+</script>
   </body>
 </html>
