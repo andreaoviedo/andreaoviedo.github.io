@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../css/tools.css" />
+
+    <title>Proprompt - Constructor de prompts</title>
+  </head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0MDFE9YFY5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0MDFE9YFY5');
+</script>
+  <body>
+    <script src="../../js/menu.js"></script>
+
+    <div class="container">
+      <h1 class="mt-5 mb-3">&#10024; Proprompt - Constructor de prompts</h1>
+      <div
+        class="alert alert-warning alert-dismissible fade show mb-4"
+        role="alert"
+      >
+        &#x1f4a1; Utiliza esta herramienta para escribir mejores prompts para ChatGPT.
+      </div>
+
+      <div class="mt-5"></div>
+      <div id="promptdiv" class="row mt-3">
+        <div class="col-md-3">
+            <h5>Este es tu prompt:<i class="fas fa-question-circle" data-toggle="tooltip" title="ChatGPT tomará el rol de este personaje"></i></h5>
+        </div>
+        <div class="col-md-9">
+           
+
+            <textarea class="form-control"  id="prompt" rows="3"></textarea>
+            
+        </div>
+        
+       
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-md-3">
+            <h5>Instrucción<i class="fas fa-question-circle" data-toggle="tooltip" title="ChatGPT tomará el rol de este personaje"></i></h5>
+        </div>
+        <div class="col-md-9">
+           
+
+            <textarea class="form-control" placeholder="Escribe una instrucción lo más directa posible para ChatGPT" id="instruction" rows="3">Preséntate a ti mismo.</textarea>
+            <button id="btn-nuevo-mensaje" onclick="imprimirMensajeAleatorio()">Dame un ejemplo</button>
+  
+        </div>
+        
+       
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-3">
+            <h5>Actúa como un <i class="fas fa-question-circle" data-toggle="tooltip" title="ChatGPT tomará el rol de este personaje"></i></h5>
+        </div>
+        <div class="col-md-5">
+            <input id="rol-input" type="text" class="form-control" placeholder="Escribe un rol">
+        </div>
+        
+        <div class="col-md-4">
+            <select id="rol-select" class="form-control">
+              </select>
+        </div>
+       
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-3">
+            <h5>Formato de respuesta <i class="fas fa-question-circle" data-toggle="tooltip" title="ChatGPT tomará el rol de este personaje"></i></h5>
+        </div>
+        <div class="col-md-5">
+            <input id="format-input" type="text" class="form-control" placeholder="Escribe el formato de salida">
+        </div>
+        
+        <div class="col-md-4">
+            <select id="format-select" class="form-control">
+              </select>
+        </div>
+       
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-md-3">
+            <h5>Idioma <i class="fas fa-question-circle" data-toggle="tooltip" title="ChatGPT tomará el rol de este personaje"></i></h5>
+        </div>
+        <div class="col-md-5">
+            <input id="language-input" type="text" class="form-control" placeholder="Escribe el idioma">
+        </div>
+        
+        <div class="col-md-4">
+            <select id="language-select" class="form-control">
+              </select>
+        </div>
+       
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-md-3">
+            <h5>Longitud <i class="fas fa-question-circle" data-toggle="tooltip" title="ChatGPT tomará el rol de este personaje"></i></h5>
+        </div>
+        <div class="col-md-5">
+            <input id="length-input" type="text" class="form-control" placeholder="Especifica la longitud máxima">
+        </div>
+        
+        <div class="col-md-4">
+            <select id="length-select" class="form-control">
+              </select>
+        </div>
+       
+      </div>
+
+      <div>
+        <button class="btn" id="btn-actualizar" onclick="construirPrompt()">Actualizar</button>
+      </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../../js/commonfunctions.js"></script>
+    <script src="../../js/proprompt.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        var messages = [
+          "Explica [escribe tu tema] a un niño de 6 años",
+          "Escribe ideas para un artículo acerca de [escribe tu tema]",
+          "Redacta una carta de recomendación para [perfil de la person]",
+          "Genera 5 ideas de nombres para un video de YouTube acerca de [escribe tu tema]"
+        ];
+    
+        function imprimirMensajeAleatorio() {
+          var randomIndex = Math.floor(Math.random() * messages.length);
+          var randomMessage = messages[randomIndex];
+          var instruction = document.getElementById('instruction');
+          instruction.value = randomMessage + '\n';
+        }
+      </script>
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
