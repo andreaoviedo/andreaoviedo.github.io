@@ -18,8 +18,21 @@
 
 
  let rol_opciones = [
-   { value: "director", text: "director" },
+   { value: "director general", text: "director general" },
+   { value: "crítico de cine", text: "crítico de cine" },
+   { value: "actor", text: "actor" },
+   { value: "ingeniero en sistemas", text: "ingeniero en sistemas" },
+   { value: "especialista en mercadotecnia", text: "especialista en mercadotecnia" },
+   { value: "periodista", text: "periodista" },
+   { value: "gerente de recursos humanos", text: "gerente de recursos humanos" },
+   { value: "publicista", text: "publicista" },
+   { value: "científico de datos", text: "científico de datos" },
+   { value: "guía de turistas", text: "guía de turistas" },
    { value: "profesor", text: "profesor" },
+   { value: "copywriter", text: "copywriter" },
+   { value: "reclutador", text: "reclutador" },
+   { value: "programador", text: "programador" },
+   { value: "especialista en SEO", text: "especialista en SEO" },
    { value: "alumno", text: "alumno" }
  ];
  
@@ -27,8 +40,25 @@
    { value: "lista", text: "lista" },
    { value: "párrafo", text: "párrafo" },
    { value: "tabla", text: "tabla" },
+   { value: "", text: "texto enriquecido" },
+   { value: "", text: "markdown" },
+   { value: "", text: "json" },
+   { value: "", text: "" },
+   { value: "", text: "" },
+   { value: "", text: "" },
+   { value: "", text: "" },
    { value: "csv", text: "csv" }
  ];
+ let style_opciones = [
+  { value: "formal", text: "formal" },
+  { value: "informal", text: "informal" },
+  { value: "persuasiva", text: "persuasivo" },
+  { value: "descriptiva", text: "descriptivo" },
+  { value: "graciosa", text: "gracioso" },
+  { value: "narrativa", text: "narrativo" },
+  { value: "inspiracional", text: "inspiracional" },
+  { value: "confrontacional", text: "confrontacional" }
+];
  let language_opciones = [
     { value: "español", text: "español" },
     { value: "inglés", text: "inglés" },

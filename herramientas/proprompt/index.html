@@ -55,7 +55,7 @@
            
 
             <textarea class="form-control"  id="prompt" rows="3"></textarea>
-            
+            <button onclick="copyText()">Copiar</button>
         </div>
         
        
@@ -149,8 +149,17 @@
         var messages = [
           "Explica [escribe tu tema] a un niño de 6 años",
           "Preséntate a ti mismo",
+          "Escribe un ensayo sobre [escribe tu tema]",
+          "Escribe un artículo sobre [escribe tu tema]",
+          "Escribe un resumen sobre [escribe tu tema]",
+          "Escribe un guion de video acerca de [escribe tu tema]",
+          "Crea una lista de palabras con buen SEO sobre [escribe tu tema]",
+          "Crea el índice de un libro acerca de [escribe tu tema]",
+          "Define los temas de un curso de [escribe tu tema]",
+          "Redacta la descripción de un producto que [describe las características del producto]",
+          "Redacta el copy de una publicación de redes sociales sobre [describe de qué trata]",
           "Escribe ideas para un artículo acerca de [escribe tu tema]",
-          "Redacta una carta de recomendación para [perfil de la person]",
+          "Redacta una carta de recomendación para [perfil de la persona]",
           "Genera 5 ideas de nombres para un video de YouTube acerca de [escribe tu tema]"
         ];
     
@@ -165,6 +174,26 @@
       $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip();
       });
+    </script>
+    <script>
+      function copyText() {
+  // Obtener el elemento textarea
+  var textarea = document.getElementById("prompt");
+
+  // Seleccionar el texto dentro del textarea
+  textarea.select();
+
+  // Copiar el texto al portapapeles del usuario
+  document.execCommand("copy");
+
+  // Deseleccionar el texto para evitar resaltar automáticamente
+  textarea.blur();
+
+  // Cambiar el texto del botón después de copiar
+  var button = document.querySelector("button");
+  button.innerHTML = "¡Copiado!";
+}
+
     </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
