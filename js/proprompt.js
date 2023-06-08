@@ -13,6 +13,9 @@
  var language_select = document.getElementById('language-select');
  var language_input = document.getElementById('language-input');
 
+ var temperature_select = document.getElementById('temperature-select');
+ var temperature_input = document.getElementById('temperature-input');
+
  var prompt = document.getElementById('prompt');
  var instruction = document.getElementById('instruction');
 
@@ -20,7 +23,6 @@
  let rol_opciones = [
    { value: "director general", text: "director general" },
    { value: "crítico de cine", text: "crítico de cine" },
-   { value: "actor", text: "actor" },
    { value: "ingeniero en sistemas", text: "ingeniero en sistemas" },
    { value: "especialista en mercadotecnia", text: "especialista en mercadotecnia" },
    { value: "periodista", text: "periodista" },
@@ -38,16 +40,12 @@
  ];
  
  let format_opciones = [
-   { value: "lista", text: "lista" },
-   { value: "párrafo", text: "párrafo" },
+  { value: "párrafo", text: "párrafo" },{ value: "lista", text: "lista" },
+   
    { value: "tabla", text: "tabla" },
-   { value: "", text: "texto enriquecido" },
-   { value: "", text: "markdown" },
-   { value: "", text: "json" },
-   { value: "", text: "" },
-   { value: "", text: "" },
-   { value: "", text: "" },
-   { value: "", text: "" },
+   { value: "markdown", text: "markdown" },
+   { value: "json", text: "json" },
+   { value: "html", text: "html" },
    { value: "csv", text: "csv" }
  ];
  let style_opciones = [
@@ -71,11 +69,25 @@
     { value: "1 párrafo", text: "1 párrafo" }
   ];
 
+  let temperature_opciones = [
+    { value: "0.1", text: "0.1" },
+    { value: "0.2", text: "0.2" },
+    { value: "0.3", text: "0.3" },
+    { value: "0.4", text: "0.4" },
+    { value: "0.5", text: "0.5" },
+    { value: "0.6", text: "0.6" },
+    { value: "0.7", text: "0.7" },
+    { value: "0.8", text: "0.8" },
+    { value: "0.9", text: "0.9" },
+    { value: "1.0", text: "1.0" }
+  ];
+
  // Llamar a la función con los parámetros deseados
  asignarEventoChange('rol-select', 'rol-input');
  asignarEventoChange('format-select', 'format-input');
  asignarEventoChange('language-select', 'language-input');
  asignarEventoChange('length-select', 'length-input');
+ asignarEventoChange('temperature-select', 'temperature-input');
 
 
   // Función para actualizar el valor del input cuando cambia la opción seleccionada
@@ -118,6 +130,7 @@ opciones.unshift({ value: "", text: "o selecciona una opción de la lista" });
  window.onload = cargarOpciones(format_opciones,format_select);
  window.onload = cargarOpciones(language_opciones,language_select);
  window.onload = cargarOpciones(length_opciones,length_select);
+ window.onload = cargarOpciones(temperature_opciones,temperature_select);
 
  function construirPrompt() {
     promptdiv.style.display = "block";
@@ -126,6 +139,7 @@ opciones.unshift({ value: "", text: "o selecciona una opción de la lista" });
     var format_prompt = format_input.value !== '' ? ' en formato de ' + format_input.value : '';
     var length_prompt = length_input.value !== '' ? '. Redáctalo en ' + length_input.value : '';
     var language_prompt = language_input.value !== '' ? '. Escribe en ' + language_input.value : '';
-    var text = rol_prompt + instruction_prompt + format_prompt + language_prompt + length_prompt;
+    var temperature_prompt = temperature_input.value !== '' ? '. Utiliza una temperatura de ' + temperature_input.value : '';
+    var text = rol_prompt + instruction_prompt + format_prompt + language_prompt + length_prompt + temperature_prompt;
     prompt.value = text;
   }
