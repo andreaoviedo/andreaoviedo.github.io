@@ -38,10 +38,13 @@ document.write(`<nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="dropdown-item" href="../../ia">Apps de Inteligencia Artificial</a>
           </li>  
           <li>
+            <a class="dropdown-item" href="../../nocode">Automatización para profes</a>
+          </li> 
+          <li>
             <a class="dropdown-item" href="../../appsparaprofes">Apps para profesores</a>
           </li>  
           <li>
-            <a class="dropdown-item" href="../../bloom">Automatización para profes</a>
+            <a class="dropdown-item" href="../../automatizacionparaprofes">Automatización para profes</a>
           </li> 
           <li>
             <a class="dropdown-item" href="../../bloom">Taxonomía de Bloom para la Era Digital</a>
