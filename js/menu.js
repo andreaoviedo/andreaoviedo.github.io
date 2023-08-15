@@ -38,7 +38,7 @@ document.write(`<nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="dropdown-item" href="../../ia">Apps de Inteligencia Artificial</a>
           </li>  
           <li>
-            <a class="dropdown-item" href="../../nocode">Apps NoCode y LowCode</a>
+            <a class="dropdown-item" href="../../nocode">Apps NoCode y LowCode.</a>
           </li> 
           <li>
             <a class="dropdown-item" href="../../appsparaprofes">Apps para profesores</a>
