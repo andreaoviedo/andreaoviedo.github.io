@@ -35,13 +35,13 @@ document.write(`<nav class="navbar navbar-expand-lg navbar-light bg-light">
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
         <li>
-            <a class="dropdown-item" href="../../ia">Apps de Inteligencia Artificial</a>
+            <a class="dropdown-item" href="../../ia">Tabla de Apps de Inteligencia Artificial</a>
           </li>  
           <li>
-            <a class="dropdown-item" href="../../nocode">Apps NoCode y LowCode</a>
-          </li> 
+            <a class="dropdown-item" href="../../chatgptprofes">ChatGPT para profes</a>
+          </li>  
           <li>
-            <a class="dropdown-item" href="../../appsparaprofes">Apps para profesores</a>
+            <a class="dropdown-item" href="../../appsparaprofes">Tabla de Apps para profesores</a>
           </li>  
           <li>
             <a class="dropdown-item" href="../../automatizacionparaprofes">Automatización para profes</a>
@@ -49,6 +49,9 @@ document.write(`<nav class="navbar navbar-expand-lg navbar-light bg-light">
           <li>
             <a class="dropdown-item" href="../../bloom">Taxonomía de Bloom para la Era Digital</a>
           </li>  
+          <li>
+            <a class="dropdown-item" href="../../nocode">Rueda de apps NoCode y LowCode</a>
+          </li> 
 
           <li><hr class="dropdown-divider" /></li>
         <li>
