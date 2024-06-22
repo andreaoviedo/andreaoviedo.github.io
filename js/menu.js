@@ -3,7 +3,8 @@ document.write(`<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" style="color:#ff9c9c" href="../../"
     >
     <img class="img-fluid" style="max-width:80px;" src="../img/andreaoviedo-logo.png" alt="Andrea Oviedo">
-   
+    </a
+  >
   <button
     class="navbar-toggler"
     type="button"
