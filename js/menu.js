@@ -66,7 +66,7 @@ document.write(`<nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="dropdown-item" href="../../herramientas/temporizador">Temporizador</a>
           </li>
           <li>
-            <a class="dropdown-item" href="../../herramientas/proprompt">ProPrompt</a>
+            <a class="dropdown-item" href="../../herramientas/proprompt">ProPrompt.</a>
           </li>
           
         </ul>
